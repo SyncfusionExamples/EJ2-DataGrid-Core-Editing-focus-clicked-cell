@@ -20,6 +20,15 @@
         var fieldToFocus = '#' + this.element.id + this.columns[cellIndex].field;
         var cellSelected = args.row.querySelector(fieldToFocus);
         cellSelected.focus();
+		this.scrollModule.content.scrollLeft = scrollPos;
+      } else if (args.requestType == 'save' || args.requestType == 'cancel') {
+        this.scrollModule.content.scrollLeft = scrollPos;
+      }
+    }
+	
+	function actionBegin(args) {
+      if (args.requestType == 'beginEdit') {
+        scrollPos = this.scrollModule.content.scrollLeft;
       }
     }
 </script>
