@@ -1,5 +1,7 @@
 # ASP.NET CORE DataGrid - Editing Focus Clicked Cell
 
+## Repository Description
+
 This repository contains an ASP.NET Core sample that demonstrates how to focus the clicked cell during normal editing in a Syncfusion ASP.NET Core DataGrid.
 
 ## Project Overview
